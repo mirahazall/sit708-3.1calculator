@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/textViewFirstValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="100dp"
+    android:textStyle="bold"
+    android:text="First Value:" />
+
+<EditText
+    android:id="@+id/editTextFirstValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:layout_below="@id/textViewFirstValue"
+    android:layout_alignBaseline="@id/textViewFirstValue"
+    android:layout_toEndOf="@id/textViewFirstValue"
+    android:layout_marginStart="40dp"
+    android:hint="First Value"/>
+
+    <TextView
+        android:id="@+id/textViewSecondValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFirstValue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Second Value:" />
+
+    <EditText
+        android:id="@+id/editTextSecondValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewSecondValue"
+        android:layout_alignBaseline="@id/textViewSecondValue"
+        android:layout_toEndOf="@id/textViewSecondValue"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Second Value"/>
+
+
+<Button
+    android:id="@+id/subtractButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextSecondValue"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:text="Subtract"/>
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtractButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_below="@id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
